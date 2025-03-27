@@ -97,4 +97,13 @@ function autoriser_svg($mimes) {
 add_filter('upload_mimes', 'autoriser_svg');
 // ----------------------------------------------------activation du téléversement des svg sur wordpress------------------------------------------------------------
 
-
+// ----------------------------------------------------security------------------------------------------------------------
+// Bloque l'accès à /wp-json/wp/v2/users sans bloquer les call api des plugins wordpress 
+function block_access_to_users_endpoint() {
+    // Vérifie si l'URL demandée correspond à /wp-json/wp/v2/users
+    if (strpos($_SERVER['REQUEST_URI'], '/wp-json/wp/v2/users') !== false) {
+        // Envoie une erreur 403 (Forbidden) et bloque l'accès
+        wp_die('Accès interdit', 'Accès interdit', array('response' => 403));
+    }
+}
+add_action('init', 'block_access_to_users_endpoint');
