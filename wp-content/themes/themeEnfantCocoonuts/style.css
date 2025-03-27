@@ -1,0 +1,322 @@
+/*
+Theme Name: theme site cocoonuts
+Author: james ahmedaly
+Description: Site enfant E-commerce cocoonuts
+Version: 1.0
+*/
+
+
+/* mobli first  */
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --nav-color: #fffaf0;
+    --font-dosis: "Dosis", sans-serif ; 
+    --font-montserrat: "Montserrat", sans-serif ; 
+    --text-colorNav:#1e1e1e;
+    --font-sizeLink: 1.25rem;
+    --background-footer:#393939;
+    --color-textFooter:#FAFAFA;
+    --marge-footerTopBottom : 70px;
+    --padding-containerFooter: 58px 0 42px 0;
+    --color-titreFootre: #FFFFFF;
+    --espacement-footerHautDroite:25px;
+}
+
+/*--------------------------------------------------------debut de la partie du css qui gère la nav bar ----------------------------------------------- */
+
+#navigation{
+    background: var(--nav-color) ;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    height: 133px;
+
+}
+#primary-menu ul{
+    list-style-type: none;
+    gap: 30px;
+
+}
+#primary-menu ul a{
+    text-decoration: none;
+    gap: 32px;
+    font-family: var(--font-dosis);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;  
+    font-size: var(--font-sizeLink) ;
+    color: var(--text-colorNav);
+}
+.custom-logo{
+    width: 167px;
+    height: 89px;
+}
+#primary-menu ul, #navigation, .navbar-icone,.navbar-icone div{
+    display: flex;
+}
+.navbar-icone,.navbar-icone div{
+    justify-content: center;
+    align-items: center;
+}
+.navbar-icone{
+    gap: 2.6rem;
+}
+.navbar-icone div{
+    gap: 1rem;
+}
+
+/* menu burger  */
+.burger {
+    width: 32px;
+    height: 4px;
+    cursor: pointer;
+    right: 2rem;
+    top: 2rem;
+    z-index: 20;
+}
+
+.burger span {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 14px;
+    display: block;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.burger span::before,
+.burger span::after {
+    content: "";
+    width: 100%;
+    background-color: black;
+    display: block;
+    transition: all 0.5s ease-in-out;
+    border-radius: 14px;
+    height: 4px;
+}
+
+.burger span::before {
+    transform: translateY(-10px);
+
+}
+
+.burger span::after {
+    transform: translateY(10px);
+    margin-top: -4px;
+}
+
+
+.burger.active span {
+    background-color: transparent;
+}
+
+.burger.active span::before {
+    transform: rotateZ(45deg) translateY(0);
+}
+
+.burger.active span::after {
+    transform: rotateZ(-45deg) translateY(0);
+}
+.off{
+    display: none;
+}
+.navbar-icone{
+    display: none;
+}
+
+.hide{
+    display: grid;
+    position: fixed;
+    padding: 24px;
+    right: 0;
+    top: 0px;
+    background: rgba(255, 255, 255, 1);
+    transform: translateX(50%);
+    animation: apparition .6s ease-in-out forwards;
+    opacity: 0;
+    height: 100vh;
+    width: 315px;
+    grid-template-rows: auto auto;
+    align-content: space-between;
+    z-index: 3;
+}
+@keyframes apparition { 
+    100%{
+        opacity: 1;
+        transform:translateX(0%);    
+    }
+}
+/* menu burger  */
+
+/*--------------------------------------------------------fin de la partie du css qui gère la nav bar ----------------------------------------------- */
+
+
+/*-------------------------------------------------------------début de la gestion du style du footer------------------------------------------------*/
+.containerWidget{
+    background: var(--background-footer);
+    gap: var(--marge-footerTopBottom);
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-containerFooter) ;
+}
+
+.widget_nav_menu ul{
+    list-style: none;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.widget_nav_menu ul a{
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 100%;
+    color: var(--color-textFooter);
+    text-decoration: none;
+
+}
+#widgetMillieu{
+    margin-right:40px ;
+}
+
+#widgetMillieu .wp-container-core-columns-is-layout-1 > *:nth-child(1){
+    margin-right: 56px;
+}
+#widgetMillieu .wp-container-core-columns-is-layout-1 > *:nth-child(2){
+    margin-right: 23px;
+}
+
+#widgetGauche{
+    margin-right: 55px ;
+}
+
+.widget-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#widgetBasMillieu{
+    text-align: center;
+    color:var(--color-textFooter);
+    font-family: var(--font-montserrat);
+    font-weight: 100;
+    font-size: 0.8rem;
+    line-height: 100%;
+}
+#widgetDroite{
+    display: flex;
+    flex-direction: column;
+    gap:var(--espacement-footerHautDroite);
+}
+#widgetDroite h2{
+    font-family: var(--font-dosis);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--color-textFooter) ;
+}
+
+
+
+/*-------------------------------------------------------------fin de la gestion du style du footer------------------------------------------------*/
+
+/*-------------------------------------------------------------------- css du slider  ------------------------------------------------------------*/
+
+.elementor-element .swiper .elementor-swiper-button-prev{
+    left: 0px!important;
+
+}
+
+.elementor-element .swiper .elementor-swiper-button-next{
+    right: -25px!important;
+
+}
+.elementor-element .swiper .elementor-swiper-button-prev, .elementor-element .swiper .elementor-swiper-button-next{
+    width: 50px;
+    height: 50px;
+}
+.elementor-element .swiper .elementor-swiper-button svg{
+    height: 2em!important;
+}
+
+/*-------------------------------------------------------------------- fin du css du slider  ------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------début du css pour la page error------------------------------------------------------*/
+
+/*-----------------------------------------------------------------fin du css pour la page error------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------css des widgets----------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------fin du css des widgets---------------------------------------------------------*/
+
+
+
+
+@media screen and (max-width : 1090px) {
+    .widget-top{
+        gap: 20px;
+    }
+    #widgetGauche, #widgetMillieu{
+        margin-right: 0px;
+    }
+    #widgetMillieu .wp-block-columns{
+        display: flex;
+        flex-wrap: wrap;
+        margin:0 20px;
+    }
+}
+
+
+
+/* version tablette / laptop  */
+@media screen and (min-width : 940px) {
+    /* on desactive le menu hamburger au moment ou on sort du mode mobile  */
+    .burger{
+        display: none;
+    }
+    /* on dispose en ligne le menu en version laptop  */
+    #primary-menu{
+        justify-content: space-between;
+        display: flex;
+        padding: 0;
+    }
+    #navigation{
+        padding:0px 100px;
+
+    }
+    .custom-logo{
+        width: initial;
+        height: initial;
+    }
+    .hide{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width : 444px) {
+    .navbar-icone{
+        display: flex;
+    }
+    #navigation{
+        position: absolute;
+    }
+
+
+
+}
