@@ -263,9 +263,42 @@ Version: 1.0
 /* ------------------------------------------------------------fin du style des nouveaux produits ------------------------------------------------------------*/
 
 
-/* ------------------------------------------------------------style tendency ------------------------------------------------------------*/
+/* ------------------------------------------------------------style du formulaire de contact ------------------------------------------------------------*/
+.wpcf7 .nomPrenom {
+    display: flex!important;
+    gap: 27px;
+}
+.form-group p {
+    margin: initial!important;
+    width: 100%!important;
+}
 
-/* ------------------------------------------------------------fin du style tendency ------------------------------------------------------------*/ 
+/* newslette  */
+.wpcf7 .formNewsletter {
+    display: flex!important;
+    gap: 24px;
+}
+.wpcf7 .formNewsletter p{
+    display: flex!important;
+    gap: 24px;
+}
+.wpcf7 .formNewsletter p br {
+    display: none;
+}
+.wpcf7 .formNewsletter .wpcf7-spinner,.formNewsletter .wpcf7-not-valid-tip {
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* newslette  */
+
+/* ------------------------------------------------------------fin du style du formulaire de contact ------------------------------------------------------------*/
+
+
+
+
 
 
 

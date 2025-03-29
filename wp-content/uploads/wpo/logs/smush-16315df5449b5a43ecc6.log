@@ -1,0 +1,57 @@
+[2025-03-29 09:09:25 : INFO] - Re_Smush_It_Task server status: Online 
+[2025-03-29 09:09:26 : INFO] - A total of 7 tasks of type smush found and will be processed in this iteration 
+[2025-03-29 09:09:26 : DEBUG] - Lock option (updraft_lock_smush, wp_options) was created in the database 
+[2025-03-29 09:09:26 : INFO] - Lock (updraft_lock_smush, wp_options) acquired after initialising the database 
+[2025-03-29 09:09:26 : INFO] - Processing task with ID : 1, and type 'smush' 
+[2025-03-29 09:09:26 : INFO] - Re_Smush_It_Task - Attachment ID : 34, Started on : March 29, 2025 09:09:26 
+[2025-03-29 09:09:26 : INFO] - File: logo-cocoonuts.png, Compression quality: 92 
+[2025-03-29 09:09:26 : INFO] - Backing up the original image - 2025/03/logo-cocoonuts-updraft-pre-smush-original.png 
+[2025-03-29 09:09:26 : INFO] - There were no WebP conversion tools found on your server. 
+[2025-03-29 09:09:26 : INFO] - Successfully optimized the image - C:\wamp64\www\cocoonut/wp-content/uploads/2025/03/logo-cocoonuts.png.The file was compressed from 12.66 KB to 4.78 KB, saving 62.28 percent, using WP-Optimize 
+[2025-03-29 09:09:26 : INFO] - Completed processing task with ID : 1, and type 'smush' 
+[2025-03-29 09:09:26 : INFO] - Processing task with ID : 2, and type 'smush' 
+[2025-03-29 09:09:26 : INFO] - Re_Smush_It_Task - Attachment ID : 35, Started on : March 29, 2025 09:09:26 
+[2025-03-29 09:09:26 : INFO] - File: cropped-logo-cocoonuts.png, Compression quality: 92 
+[2025-03-29 09:09:27 : INFO] - Backing up the original image - 2025/03/cropped-logo-cocoonuts-updraft-pre-smush-original.png 
+[2025-03-29 09:09:27 : INFO] - There were no WebP conversion tools found on your server. 
+[2025-03-29 09:09:27 : INFO] - Successfully optimized the image - C:\wamp64\www\cocoonut/wp-content/uploads/2025/03/cropped-logo-cocoonuts.png.The file was compressed from 9.55 KB to 3.46 KB, saving 63.76 percent, using WP-Optimize 
+[2025-03-29 09:09:27 : INFO] - Completed processing task with ID : 2, and type 'smush' 
+[2025-03-29 09:09:27 : INFO] - Processing task with ID : 3, and type 'smush' 
+[2025-03-29 09:09:27 : INFO] - Re_Smush_It_Task - Attachment ID : 37, Started on : March 29, 2025 09:09:26 
+[2025-03-29 09:09:27 : INFO] - File: cropped-logo-cocoonuts-1.png, Compression quality: 92 
+[2025-03-29 09:09:27 : INFO] - Backing up the original image - 2025/03/cropped-logo-cocoonuts-1-updraft-pre-smush-original.png 
+[2025-03-29 09:09:27 : INFO] - There were no WebP conversion tools found on your server. 
+[2025-03-29 09:09:27 : INFO] - Successfully optimized the image - C:\wamp64\www\cocoonut/wp-content/uploads/2025/03/cropped-logo-cocoonuts-1.png.The file was compressed from 9.55 KB to 3.46 KB, saving 63.76 percent, using WP-Optimize 
+[2025-03-29 09:09:27 : INFO] - Completed processing task with ID : 3, and type 'smush' 
+[2025-03-29 09:09:27 : INFO] - Processing task with ID : 4, and type 'smush' 
+[2025-03-29 09:09:27 : INFO] - Re_Smush_It_Task - Attachment ID : 53, Started on : March 29, 2025 09:09:26 
+[2025-03-29 09:09:27 : INFO] - File: logo-cocoonuts-1.png, Compression quality: 92 
+[2025-03-29 09:09:28 : INFO] - Backing up the original image - 2025/03/logo-cocoonuts-1-updraft-pre-smush-original.png 
+[2025-03-29 09:09:28 : INFO] - There were no WebP conversion tools found on your server. 
+[2025-03-29 09:09:28 : INFO] - Successfully optimized the image - C:\wamp64\www\cocoonut/wp-content/uploads/2025/03/logo-cocoonuts-1.png.The file was compressed from 12.66 KB to 4.78 KB, saving 62.28 percent, using WP-Optimize 
+[2025-03-29 09:09:28 : INFO] - Completed processing task with ID : 4, and type 'smush' 
+[2025-03-29 09:09:28 : INFO] - Processing task with ID : 5, and type 'smush' 
+[2025-03-29 09:09:28 : INFO] - Re_Smush_It_Task - Attachment ID : 54, Started on : March 29, 2025 09:09:26 
+[2025-03-29 09:09:28 : INFO] - File: logo-cocoonuts-2.png, Compression quality: 92 
+[2025-03-29 09:09:28 : INFO] - Backing up the original image - 2025/03/logo-cocoonuts-2-updraft-pre-smush-original.png 
+[2025-03-29 09:09:28 : INFO] - There were no WebP conversion tools found on your server. 
+[2025-03-29 09:09:28 : INFO] - Successfully optimized the image - C:\wamp64\www\cocoonut/wp-content/uploads/2025/03/logo-cocoonuts-2.png.The file was compressed from 12.66 KB to 4.78 KB, saving 62.28 percent, using WP-Optimize 
+[2025-03-29 09:09:28 : INFO] - Completed processing task with ID : 5, and type 'smush' 
+[2025-03-29 09:09:28 : INFO] - Processing task with ID : 6, and type 'smush' 
+[2025-03-29 09:09:28 : INFO] - Re_Smush_It_Task - Attachment ID : 55, Started on : March 29, 2025 09:09:26 
+[2025-03-29 09:09:28 : INFO] - File: logo-cocoonuts-3.png, Compression quality: 92 
+[2025-03-29 09:09:29 : INFO] - Backing up the original image - 2025/03/logo-cocoonuts-3-updraft-pre-smush-original.png 
+[2025-03-29 09:09:29 : INFO] - There were no WebP conversion tools found on your server. 
+[2025-03-29 09:09:29 : INFO] - Successfully optimized the image - C:\wamp64\www\cocoonut/wp-content/uploads/2025/03/logo-cocoonuts-3.png.The file was compressed from 12.66 KB to 4.78 KB, saving 62.28 percent, using WP-Optimize 
+[2025-03-29 09:09:29 : INFO] - Completed processing task with ID : 6, and type 'smush' 
+[2025-03-29 09:09:29 : INFO] - Processing task with ID : 7, and type 'smush' 
+[2025-03-29 09:09:29 : INFO] - Re_Smush_It_Task - Attachment ID : 99, Started on : March 29, 2025 09:09:26 
+[2025-03-29 09:09:29 : INFO] - File: logo-cocoonuts-footer.png, Compression quality: 92 
+[2025-03-29 09:09:29 : INFO] - Backing up the original image - 2025/03/logo-cocoonuts-footer-updraft-pre-smush-original.png 
+[2025-03-29 09:09:29 : INFO] - There were no WebP conversion tools found on your server. 
+[2025-03-29 09:09:29 : INFO] - Successfully optimized the image - C:\wamp64\www\cocoonut/wp-content/uploads/2025/03/logo-cocoonuts-footer.png.The file was compressed from 7.35 KB to 3.53 KB, saving 52.01 percent, using WP-Optimize 
+[2025-03-29 09:09:29 : INFO] - Completed processing task with ID : 7, and type 'smush' 
+[2025-03-29 09:09:29 : INFO] - Lock option (updraft_lock_smush, wp_options) released 
+[2025-03-29 09:09:29 : INFO] - Successfully processed the queue (smush). 7 tasks were processed out of 7. 
+[2025-03-29 09:09:29 : INFO] - Lock option (updraft_lock_smush, wp_options) was deleted from the database 
+[2025-03-29 09:09:29 : INFO] - Cleaning up tasks of type (smush). A total of 7 tasks will be deleted. 
