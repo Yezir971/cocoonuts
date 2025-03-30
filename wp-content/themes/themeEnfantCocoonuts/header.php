@@ -17,12 +17,18 @@
 <main>
     
     <nav id="navigation">
-
+        <!-- constenu du menu burger  -->
+         <div class="logo-menu-burger">
+            <?php if(has_custom_logo()) : ?>
+            <?php the_custom_logo(); ?>            
+            <?php endif; ?>
+         </div>
+        <!-- constenu du menu burger  -->
 
 
         <?php
         
-        // menu nav bar on fixe un id et une class pour pouvoir gérer le menu hamburger 
+        
         wp_nav_menu(
           array(
             'theme_location' => 'main-menu',

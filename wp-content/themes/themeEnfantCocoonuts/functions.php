@@ -72,15 +72,11 @@ function mon_theme_widget_zone(){
         'id' => 'centre-404',
         'description' => 'région centre pour la page 404 par exemple'
     ]);
-    
-
-
 }
 add_action('widgets_init','mon_theme_widget_zone');
 
 // fonction pour modifier le conteneur des widgets (remplacer les li par une div)
 function custom_widget_container($widget){   
-    //ici on enlève les list a puce li degeux 
     $widget[0]['before_widget']= str_replace("<li","<div",$widget[0]['before_widget']);
     $widget[0]['after_widget']= str_replace('</li','</div',$widget[0]['after_widget']);
 
@@ -107,3 +103,7 @@ function block_access_to_users_endpoint() {
     }
 }
 add_action('init', 'block_access_to_users_endpoint');
+
+
+// ajout du shortcode pour les likes 
+include(get_template_directory().'/shortcode/shortcode.php');

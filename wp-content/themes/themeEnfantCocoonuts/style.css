@@ -24,6 +24,8 @@ Version: 1.0
     --padding-containerFooter: 58px 0 42px 0;
     --color-titreFootre: #FFFFFF;
     --espacement-footerHautDroite:25px;
+    --color-background-menuBurger-top: #FAFAFA;
+    --color-background-menuBurger: #FFFFFF;
 }
 
 /*--------------------------------------------------------debut de la partie du css qui gère la nav bar ----------------------------------------------- */
@@ -132,19 +134,19 @@ Version: 1.0
 }
 
 .hide{
-    display: grid;
+    display: flex;
+    flex-direction: column-reverse;
     position: fixed;
-    padding: 24px;
-    right: 0;
+    justify-content: start;
+    /* padding: 24px; */
+    right: 0px;
     top: 0px;
-    background: rgba(255, 255, 255, 1);
+    background: var(--color-background-menuBurger);
     transform: translateX(50%);
     animation: apparition .6s ease-in-out forwards;
     opacity: 0;
     height: 100vh;
     width: 315px;
-    grid-template-rows: auto auto;
-    align-content: space-between;
     z-index: 3;
 }
 @keyframes apparition { 
@@ -272,6 +274,12 @@ Version: 1.0
     margin: initial!important;
     width: 100%!important;
 }
+.form-group ~p .wpcf7-spinner{
+    position: absolute;
+    bottom: -35px;
+    left: 36%;
+    transform: translate(50%, -50%);
+}
 
 /* newslette  */
 .wpcf7 .formNewsletter {
@@ -296,6 +304,14 @@ Version: 1.0
 
 /* ------------------------------------------------------------fin du style du formulaire de contact ------------------------------------------------------------*/
 
+/* ------------------------------------------------------------styles des erreurs des formulaires de contact ------------------------------------------------------------*/
+
+.wpcf7-response-output{
+    margin-bottom: 47px!important;
+}
+
+
+
 
 
 
@@ -316,7 +332,9 @@ Version: 1.0
 
 
 /*---------------------------------------------------------------------fin du css des widgets---------------------------------------------------------*/
-
+.logo-menu-burger{
+    display: none;
+}
 
 
 
@@ -359,8 +377,16 @@ Version: 1.0
     .hide{
         display: none;
     }
-
 }
+@media screen and (max-width : 940px) {
+    #primary-menu ul{
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        margin: 85px 93px;
+    }
+}
+
 
 @media screen and (min-width : 444px) {
     .navbar-icone{
@@ -369,7 +395,15 @@ Version: 1.0
     #navigation{
         position: absolute;
     }
-
-
+    .logo-menu-burger{
+        background: var(--color-background-menuBurger-top);
+        padding: 22px 21px;
+        margin-bottom: 85px;
+    }
+}
+@media screen and (max-width : 444px) {
+    .wpcf7 .formNewsletter p{
+        gap: 16px;
+    }
 
 }
