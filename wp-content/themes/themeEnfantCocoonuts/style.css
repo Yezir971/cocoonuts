@@ -263,7 +263,65 @@ Version: 1.0
     border: none!important; 
 }
 /* ------------------------------------------------------------fin du style des nouveaux produits ------------------------------------------------------------*/
-
+/* ------------------------------------------------------------style button produits tendances ------------------------------------------------------------*/
+.heart-container{
+    width: 22px;
+    height: 19px;
+}
+.heart-container img{
+    width: 100%;
+    height: 100%;
+}
+.heart-valide{
+    display: none;
+    position: absolute;
+}
+.heart-non-valide{
+    position: absolute;
+}
+.heart-container{
+    cursor: pointer;
+    position: relative;
+}
+.activeLikeButton{
+    animation: activeLikeButton 0.5s ease-in-out forwards;
+}
+.desactiveLikeButton{
+    animation: desactiveLikeButton 0.5s ease-in-out forwards;
+}
+.showHeart{
+    opacity: 0;
+    animation: showHeart 0.5s ease-in-out forwards;
+}
+@keyframes activeLikeButton {
+    0%{
+        filter: drop-shadow(0 0 5px #a81933);
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #a81933);
+        scale: 1;
+    }
+}
+@keyframes desactiveLikeButton {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    } 
+}
+@keyframes showHeart {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    } 
+}
+/* ------------------------------------------------------------fin du style button produits tendances ------------------------------------------------------------*/
 
 /* ------------------------------------------------------------style du formulaire de contact ------------------------------------------------------------*/
 .wpcf7 .nomPrenom {

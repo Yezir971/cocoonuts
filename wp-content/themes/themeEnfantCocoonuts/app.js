@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
   const menu = document.querySelector('.off');
-  
+  //--------------------------------------------js de la partie menu burger--------------------------------------------
   burger.addEventListener('click', () => {
     burger.classList.toggle('active');
     menu.classList.toggle('hide');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       container.style.height = '133px';
       container.style.background="#FAFAFA";
       container.style.padding = '22px 22px';
-
+      // on crée l'image du logo
       image.src = `${window.location.origin}/cocoonut/wp-content/uploads/2025/03/logo.svg`;
       image.alt = 'logo cocoonuts';
       image.style.width = '167px';
@@ -31,5 +31,36 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+  //--------------------------------------------fin js de la partie menu burger--------------------------------------------
+  //--------------------------------------------js de la partie like button--------------------------------------------
+  const heartContainers = document.querySelectorAll('.heart-container');   
+  // ajouter un événement de clic à chaque conteneur de cœur
+  heartContainers.forEach(container => {
+    container.addEventListener('click', () => {
+      const heartValide = container.querySelector('.heart-valide');
+      const heartNonValide = container.querySelector('.heart-non-valide')
+      
+      if(heartNonValide.style.display === 'none'){
+        if(heartValide.classList.contains('activeLikeButton')){
+          heartValide.classList.add('desactiveLikeButton');
+          setTimeout(() => {
+            heartNonValide.classList.add('showHeart');
+            heartNonValide.style.display = 'block';
+            heartValide.classList.remove('activeLikeButton');
+          }, 100);
+        }else{
+          heartNonValide.style.display = 'block';
+          heartValide.style.display = 'none';
+        }
+      } else {
+        heartNonValide.style.display = 'none';
+        heartValide.style.display = 'block';
+        heartValide.classList.add('activeLikeButton');
+        heartValide.classList.remove('desactiveLikeButton');
+
+      }
+    })
+  });
+  //--------------------------------------------fin js de la partie like button--------------------------------------------
 });
 

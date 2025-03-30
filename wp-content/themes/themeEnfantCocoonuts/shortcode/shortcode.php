@@ -1,17 +1,23 @@
 <?php
-function heart_shortcode($atts, $content = null){
+function heart_shortcode($atts){
     $atts = shortcode_atts(
-        array(
-        ),
         $atts,
         'heart'
     );
-    $hearts = $atts['hearts'];
-    $html = '<div class="heart-container">';
-    $html .= '<img src="' . get_template_directory_uri() . '/../../uploads/2025/03/vector.png" alt="heart">';
-    $html .= '<img src="' . get_template_directory_uri() . '/../../uploads/2025/03/vector-coeur.svg" alt="heart">';
-    $html .= '</div>';
-    return $html;
+    ob_start(); ?>
+    <div class="heart-container">
+        <img class="heart-non-valide" src="<?php echo get_template_directory_uri() ?>/../../uploads/2025/03/vector-heart-card-white.png" alt="heart-non-valide">
+        <img class="heart-valide" src="<?php echo get_template_directory_uri() ?>/../../uploads/2025/03/vector-heart-card-red.svg" alt="heart-valide">
+    </div>
+    <style>
+
+
+    </style>
+        
+    <script>
+
+    </script>
+    <?php return ob_get_clean();
 }
 
 add_shortcode('heart', 'heart_shortcode');
